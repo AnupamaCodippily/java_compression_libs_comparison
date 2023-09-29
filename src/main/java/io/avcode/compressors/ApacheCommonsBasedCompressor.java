@@ -20,7 +20,7 @@ public class ApacheCommonsBasedCompressor implements Compressor{
     }
 
     @Override
-    public void compressToFile(File file) throws IOException {
+    public void compressToFile(File file) {
         File outFile = new File(Compressor.makeCompressedFilePath(file));
         try(FileInputStream fileInputStream = new FileInputStream(file);
             FileOutputStream outputStream     = new FileOutputStream(outFile);

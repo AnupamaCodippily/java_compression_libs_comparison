@@ -11,7 +11,7 @@ public class PerformanceCheckerImpl implements PerformanceChecker{
 
     private final Compressor nativeJavaCompressor;
 
-     public PerformanceCheckerImpl(NativeJavaCompressor nativeJavaCompressor) {
+     public PerformanceCheckerImpl(Compressor nativeJavaCompressor) {
          this.nativeJavaCompressor = nativeJavaCompressor;
      }
 

@@ -1,7 +1,5 @@
 package io.avcode.compressors;
 
-import io.avcode.Configuration;
-
 import java.io.*;
 import java.util.zip.GZIPOutputStream;
 

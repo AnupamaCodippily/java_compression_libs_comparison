@@ -1,5 +1,6 @@
 package io.avcode;
 
+import io.avcode.compressors.ApacheCommonsBasedCompressor;
 import io.avcode.compressors.NativeJavaCompressor;
 
 import java.io.IOException;
@@ -13,7 +14,7 @@ public class Main {
         configuration.create();
 
         PerformanceCheckerImpl vanillaCompressionChecker = new PerformanceCheckerImpl(new NativeJavaCompressor());
-        PerformanceCheckerImpl apacheCompressionChecker = new PerformanceCheckerImpl(new NativeJavaCompressor());
+        PerformanceCheckerImpl apacheCompressionChecker = new PerformanceCheckerImpl(new ApacheCommonsBasedCompressor());
         PerformanceCheckerImpl zip4JCompressionChecker = new PerformanceCheckerImpl(new NativeJavaCompressor());
 
         try {

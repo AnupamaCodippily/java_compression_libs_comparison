@@ -4,6 +4,5 @@ import java.io.IOException;
 
 public interface PerformanceChecker {
 
-    public void compress1MB1MilTimes() throws IOException;
-
+    public void compressFileNTimes(int numberOfCompressions, String fileName, boolean toZip) throws IOException;
 }

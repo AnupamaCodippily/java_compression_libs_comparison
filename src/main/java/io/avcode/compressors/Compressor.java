@@ -10,6 +10,7 @@ public interface Compressor {
     static String makeCompressedFilePath(File file) {
        return  Configuration.OUTPUT_PATH + "results" + File.separator + file.getName() + ".zip";
     }
-    public void compress(File file) throws IOException;
+    public void compress(File file);
+    public void compressToFile(File file) throws IOException;
 
 }

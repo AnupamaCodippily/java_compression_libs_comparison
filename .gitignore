@@ -44,3 +44,6 @@ bin/
 
 ## Output and test data
 src/main/resources/output/results
+src/main/resources/application.yml
+
+.idea/sonarlint
